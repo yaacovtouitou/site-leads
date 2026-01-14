@@ -23,6 +23,7 @@ export default function AboutPage() {
         </div>
       </header>
 
+
       <main>
         {/* Section Notre Histoire */}
         <section className="py-20">
