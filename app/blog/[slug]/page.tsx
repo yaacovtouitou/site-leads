@@ -1,7 +1,7 @@
 
-import { blogPosts } from "@/lib/blogData";
-import Header from "@/components/Header";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import { blogPosts } from "../../lib/blogData";
+import Header from "../../components/Header";
+import Breadcrumbs from "../../components/Breadcrumbs";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 import NextLink from "next/link";
 import { Metadata } from "next";

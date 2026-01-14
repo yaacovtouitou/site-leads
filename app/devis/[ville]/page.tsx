@@ -1,7 +1,7 @@
 
 import type { Metadata } from "next";
-import QuizForm from "@/components/QuizForm";
-import Header from "@/components/Header";
+import QuizForm from "../../components/QuizForm";
+import Header from "../../components/Header";
 import { MapPin, CheckCircle2, Star } from "lucide-react";
 
 type Props = {

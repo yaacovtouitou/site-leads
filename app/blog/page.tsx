@@ -1,8 +1,8 @@
 
 import { ArrowRight, Calendar, User } from "lucide-react";
-import Header from "@/components/Header";
+import Header from "../components/Header";
 import Link from "next/link";
-import { blogPosts } from "@/lib/blogData";
+import { blogPosts } from "../lib/blogData";
 
 export default function BlogPage() {
   return (
