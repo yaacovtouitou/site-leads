@@ -1,6 +1,6 @@
 
 import { Building, Users, Zap, Award, CheckCircle2 } from "lucide-react";
-import Header from "../components/Header";
+import Header from "@/components/Header";
 
 export default function AboutPage() {
   return (
@@ -11,7 +11,7 @@ export default function AboutPage() {
       <header className="bg-hm-blue text-white py-24 relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=2070')" }} // Techniciens sur chantier
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=2072')" }}
         ></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
@@ -22,7 +22,6 @@ export default function AboutPage() {
           </p>
         </div>
       </header>
-
 
       <main>
         {/* Section Notre Histoire */}
@@ -60,7 +59,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-hm-yellow/20 rounded-2xl transform rotate-3"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1000" // Ouvrier isolation
+                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1000"
                   alt="Techniciens YTenergie" 
                   className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
                 />

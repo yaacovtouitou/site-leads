@@ -32,7 +32,10 @@ export default async function LocalLandingPage({ params }: Props) {
       <main>
         {/* Hero Local */}
         <section className="relative bg-hm-blue text-white py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=2072')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=2072')" }}
+          ></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20">
               <MapPin className="w-4 h-4 text-hm-yellow" />

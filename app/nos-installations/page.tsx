@@ -1,8 +1,8 @@
 
 import { ArrowRight } from "lucide-react";
-import Header from "../components/Header";
+import Header from "@/components/Header";
 import Link from "next/link";
-import { installations } from "../lib/installationsData";
+import { installations } from "@/lib/installationsData";
 
 export default function InstallationsPage() {
   return (
