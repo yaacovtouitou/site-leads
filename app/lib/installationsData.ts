@@ -7,6 +7,7 @@ const solarImages = [
   "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=1000"
 ];
 
+
 // Données des régions et villes
 const regionsData: Record<string, string[]> = {
   "Hauts-de-France": ["Lille", "Roubaix", "Dunkerque", "Arras", "Amiens", "Saint-Quentin", "Beauvais", "Calais"],
