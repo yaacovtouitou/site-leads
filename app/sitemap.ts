@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(), // Idéalement, la date de modif du post
+    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
@@ -36,5 +36,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...blogRoutes, ...installationRoutes];
+  // Génération des routes locales pour le SEO (/devis/ville)
+  // On extrait les villes uniques des installations pour créer les landing pages locales
+  const cities = Array.from(new Set(installations.map(i => i.location.split(' (')[0].toLowerCase().replace(/ /g, '-').replace(/[éèê]/g, 'e'))));
+  
+  const localRoutes = cities.map((city) => ({
+    url: `${baseUrl}/devis/${city}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9, // Haute priorité pour le SEO local
+  }));
+
+  return [...staticRoutes, ...blogRoutes, ...installationRoutes, ...localRoutes];
 }
